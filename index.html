@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+ 
+<body>
+
+  <div class="container">
+
+    <main>
+
+      <section class="introduction">
+        <h1 class="introduction__title">Learn to code by watching others</h1>
+        <p class="introduction__text">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </section>
+      <section class="content">
+        <div class="content__header">
+          <p class="content__header_text"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form action="#">
+          
+          <div class="form__input">
+            <div class="input">
+              <input type="text" name="first" placeholder="First Name">
+              <img class="error-icon" id="error-first" src="/images/icon-error.svg" alt="error-icon">
+            </div>
+            <p class="message" id="message-first">First Name cannot be empty</p>
+          </div>
+
+          <div class="form__input">
+            <div class="input">
+              <input type="text" name="last" placeholder="Last Name">
+              <img class="error-icon" id="error-last" src="/images/icon-error.svg" alt="error-icon">
+            </div>
+            <p class="message" id="message-last">Last Name cannot be empty</p>
+          </div>
+
+          <div class="form__input">
+            <div class="input">
+              <input type="text" name="email" placeholder="Email Address">  
+              <img class="error-icon" id="error-email" src="/images/icon-error.svg" alt="error-icon">
+            </div>
+            <p class="message" id="message-email">Looks like this is not an email</p>
+          </div>
+
+          <div class="form__input">
+            <div class="input">
+              <input type="password" name="password" placeholder="Password">
+              <img class="error-icon" id="error-password" src="/images/icon-error.svg" alt="error-icon">
+            </div>
+            <p class="message" id="message-password">password cannot be empty</p>
+          </div>
+
+         
+         
+          
+          <button type="submit">Claim your free trial</button>
+          <p class="terms">By clicking the button, you are agreeing to our <span class="highlight">Terms and Services</span> </p>
+        </form>
+      </section>
+
+    </main>
+
+  </div>
+  
+
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
